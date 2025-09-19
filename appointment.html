@@ -12,7 +12,7 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <style>
         .appointment-hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('http://static.photos/legal/1200x630/18');
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('http://static.photos/legal/1200x630/42');
             background-size: cover;
             background-position: center;
         }
@@ -25,26 +25,41 @@
 </head>
 <body class="font-sans bg-gray-50">
     <!-- Navigation -->
-    <nav class="bg-white shadow-md fixed w-full z-50">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <a href="index.html" class="text-2xl font-bold text-blue-800">TheCourtCase.com</a>
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
-                    <a href="about.html" class="text-gray-700 hover:text-blue-600">About</a>
-                    <a href="practice-areas.html" class="text-gray-700 hover:text-blue-600">Practice Areas</a>
-                    <a href="appointment.html" class="text-blue-600 border-b-2 border-blue-600">Appointment</a>
-                    <a href="contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-900 text-2xl">TheCourtCase.com</span>
+                        </a>
+                    </div>
                 </div>
-                <button class="md:hidden text-gray-700">
-                    <i data-feather="menu"></i>
-                </button>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Home</a>
+                    <a href="about.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">About</a>
+                    <a href="practice-areas.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Practice Areas</a>
+                    <a href="appointment.html" class="py-4 px-2 text-blue-600 border-b-4 border-blue-600 font-medium">Appointment</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i data-feather="menu" class="w-6 h-6 text-gray-500"></i>
+                    </button>
+                </div>
             </div>
+        </div>
+        <div class="hidden mobile-menu">
+            <ul>
+                <li><a href="index.html" class="block px-2 py-4 hover:bg-blue-50 transition duration-300">Home</a></li>
+                <li><a href="about.html" class="block px-2 py-4 hover:bg-blue-50 transition duration-300">About</a></li>
+                <li><a href="practice-areas.html" class="block px-2 py-4 hover:bg-blue-50 transition duration-300">Practice Areas</a></li>
+                <li><a href="appointment.html" class="block px-2 py-4 text-blue-600 bg-blue-50">Appointment</a></li>
+            </ul>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <section class="appointment-hero text-white pt-32 pb-20">
+    <section class="appointment-hero text-white pt-32 pb-20" style="margin-top: 73px;">
         <div class="container mx-auto px-4 text-center">
             <h1 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">Schedule an Appointment</h1>
             <p class="text-xl max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Book a consultation to discuss your legal matters</p>
@@ -190,7 +205,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
+    <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
@@ -242,13 +257,20 @@
     </footer>
 
     <script>
+        // Mobile menu toggle
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Initialize AOS and Feather Icons
         AOS.init({
             duration: 800,
             easing: 'ease-in-out',
             once: true
         });
-    </script>
-    <script>
         feather.replace();
     </script>
 </body>
