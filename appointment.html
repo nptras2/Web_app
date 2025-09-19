@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment - Daljeet Singh | TheCourtCase.com</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .appointment-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('http://static.photos/legal/1200x630/18');
+            background-size: cover;
+            background-position: center;
+        }
+        .form-input:focus {
+            outline: none;
+            ring: 2px;
+            ring-blue-500;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-2xl font-bold text-blue-800">TheCourtCase.com</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600">About</a>
+                    <a href="practice-areas.html" class="text-gray-700 hover:text-blue-600">Practice Areas</a>
+                    <a href="appointment.html" class="text-blue-600 border-b-2 border-blue-600">Appointment</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-700">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="appointment-hero text-white pt-32 pb-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">Schedule an Appointment</h1>
+            <p class="text-xl max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Book a consultation to discuss your legal matters</p>
+        </div>
+    </section>
+
+    <!-- Appointment Form -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="bg-blue-800 text-white py-4 px-6">
+                        <h2 class="text-xl font-bold">Appointment Request Form</h2>
+                        <p class="text-blue-100">We'll respond to confirm your appointment within 24 hours</p>
+                    </div>
+                    <form class="p-6 space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="firstName" class="block text-gray-700 font-medium mb-2">First Name</label>
+                                <input type="text" id="firstName" class="w-full px-4 py-2 border border-gray-300 rounded-lg form-input focus:border-blue-500 focus:ring-1 focus:ring-blue-500" required>
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-gray-700 font-medium mb-2">Last Name</label>
+                                <input type="text" id="lastName" class="w-full px-4 py-2 border border-gray-300 rounded-lg form-input focus:border-blue-500 focus:ring-1 focus:ring-blue-500" required>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg form-input focus:border-blue-500 focus:ring-1 focus:ring-blue-500" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg form-input focus:border-blue-500 focus:ring-1 focus:ring-blue-500" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Type of Legal Service Needed</label>
+                            <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg form-input focus:border-blue-500 focus:ring-1 focus:ring-blue-500" required>
+                                <option value="">Select a service</option>
+                                <option value="civil">Civil Disputes</option>
+                                <option value="commercial">Commercial Law</option>
+                                <option value="counseling">Client Counseling</option>
+                                <option value="research">Legal Research</option>
+                                <option value="other">Other Legal Matter</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Brief Description of Your Legal Matter</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg form-input focus:border-blue-500 focus:ring-1 focus:ring-blue-500" required></textarea>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="preferredDate" class="block text-gray-700 font-medium mb-2">Preferred Date</label>
+                                <input type="date" id="preferredDate" class="w-full px-4 py-2 border border-gray-300 rounded-lg form-input focus:border-blue-500 focus:ring-1 focus:ring-blue-500" required>
+                            </div>
+                            <div>
+                                <label for="preferredTime" class="block text-gray-700 font-medium mb-2">Preferred Time</label>
+                                <select id="preferredTime" class="w-full px-4 py-2 border border-gray-300 rounded-lg form-input focus:border-blue-500 focus:ring-1 focus:ring-blue-500" required>
+                                    <option value="">Select time</option>
+                                    <option value="9:00 AM">9:00 AM</option>
+                                    <option value="10:00 AM">10:00 AM</option>
+                                    <option value="11:00 AM">11:00 AM</option>
+                                    <option value="2:00 PM">2:00 PM</option>
+                                    <option value="3:00 PM">3:00 PM</option>
+                                    <option value="4:00 PM">4:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <input type="checkbox" id="consent" class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500" required>
+                            <label for="consent" class="ml-2 text-gray-700">I consent to being contacted by TheCourtCase.com regarding my appointment request</label>
+                        </div>
+
+                        <button type="submit" class="w-full bg-blue-700 hover:bg-blue-600 text-white py-3 px-6 rounded-lg font-medium">
+                            Submit Appointment Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Info -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-blue-800 mb-12 text-center">What to Expect</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="clock" class="w-8 h-8 text-blue-700"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Initial Consultation</h3>
+                    <p class="text-gray-600">60-minute session to discuss your legal matter and explore options</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="dollar-sign" class="w-8 h-8 text-blue-700"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Transparent Fees</h3>
+                    <p class="text-gray-600">Clear discussion about fees and payment options during consultation</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="shield" class="w-8 h-8 text-blue-700"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Confidentiality</h3>
+                    <p class="text-gray-600">All discussions are protected by attorney-client privilege</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-blue-800 mb-6">Need Immediate Assistance?</h2>
+                <p class="text-gray-700 text-lg mb-8">For urgent matters, please contact us directly</p>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="text-blue-700 mb-4">
+                            <i data-feather="mail" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">Email</h3>
+                        <p class="text-gray-600">nptras@gmail.com</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="text-blue-700 mb-4">
+                            <i data-feather="map-pin" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">Location</h3>
+                        <p class="text-gray-600">Amritsar, Punjab</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">TheCourtCase.com</h3>
+                    <p class="text-gray-400">Providing expert legal representation in Amritsar and surrounding areas.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="practice-areas.html" class="text-gray-400 hover:text-white">Practice Areas</a></li>
+                        <li><a href="appointment.html" class="text-gray-400 hover:text-white">Appointment</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="w-4 h-4 mr-2"></i>
+                            nptras@gmail.com
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="map-pin" class="w-4 h-4 mr-2"></i>
+                            Amritsar, Punjab
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Follow</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-feather="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 TheCourtCase.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
