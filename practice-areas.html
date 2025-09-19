@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Areas | Daljeet Singh | TheCourtCase.com</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .practice-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .service-icon {
+            background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-900 text-2xl">TheCourtCase.com</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Home</a>
+                    <a href="about.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">About</a>
+                    <a href="practice-areas.html" class="py-4 px-2 text-blue-600 border-b-4 border-blue-600 font-medium">Practice Areas</a>
+                    <a href="appointment.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Appointment</a>
+                    <a href="contact.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i data-feather="menu" class="w-6 h-6 text-gray-500"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden mobile-menu">
+            <ul>
+                <li><a href="index.html" class="block px-2 py-4 hover:bg-blue-50 transition duration-300">Home</a></li>
+                <li><a href="about.html" class="block px-2 py-4 hover:bg-blue-50 transition duration-300">About</a></li>
+                <li><a href="practice-areas.html" class="block px-2 py-4 text-blue-600 bg-blue-50">Practice Areas</a></li>
+                <li><a href="appointment.html" class="block px-2 py-4 hover:bg-blue-50 transition duration-300">Appointment</a></li>
+                <li><a href="contact.html" class="block px-2 py-4 hover:bg-blue-50 transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6" data-aos="fade-down">Practice Areas</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto" data-aos="fade-up">
+                Specialized legal services tailored to meet your specific needs with professionalism and expertise.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Practice Areas -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4" data-aos="fade-down">Legal Services</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up">
+                    Comprehensive legal representation and counsel across various practice areas.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Civil Disputes -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden practice-card transition duration-300" data-aos="fade-up">
+                    <div class="md:flex">
+                        <div class="md:flex-shrink-0 md:w-1/3 bg-gray-100 flex items-center justify-center p-6">
+                            <div class="service-icon rounded-lg p-4">
+                                <i data-feather="home" class="w-10 h-10 text-white"></i>
+                            </div>
+                        </div>
+                        <div class="p-8 md:w-2/3">
+                            <h3 class="text-xl font-semibold mb-3">Civil Disputes</h3>
+                            <p class="text-gray-600 mb-4">
+                                Resolution of disputes between individuals and organizations regarding legal rights and obligations, including property disputes, contract disagreements, and personal injury claims.
+                            </p>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i>
+                                    <span>Property and Land Disputes</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i>
+                                    <span>Contract Disputes</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i>
+                                    <span>Tort Claims</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Commercial Disputes -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden practice-card transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="md:flex">
+                        <div class="md:flex-shrink-0 md:w-1/3 bg-gray-100 flex items-center justify-center p-6">
+                            <div class="service-icon rounded-lg p-4">
+                                <i data-feather="dollar-sign" class="w-10 h-10 text-white"></i>
+                            </div>
+                        </div>
+                        <div class="p-8 md:w-2/3">
+                            <h3 class="text-xl font-semibold mb-3">Commercial Disputes</h3>
+                            <p class="text-gray-600 mb-4">
+                                Legal representation in business-related conflicts including contract disputes, partnership disagreements, and commercial litigation.
+                            </p>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i>
+                                    <span>Business Contract Disputes</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i>
+                                    <span>Partnership Disagreements</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i>
+                                    <span>Shareholder Disputes</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Client Counseling -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden practice-card transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="md:flex">
+                        <div class="md:flex-shrink-0 md:w-1/3 bg-gray-100 flex items-center justify-center p-6">
+                            <div class="service-icon rounded-lg p-4">
+                                <i data-feather="users" class="w-10 h-10 text-white"></i>
+                            </div>
+                        </div>
+                        <div class="p-8 md:w-2/3">
+                            <h3 class="text-xl font-semibold mb-3">Client Counseling</h3>
+                            <p class="text-gray-600 mb-4">
+                                Strategic advice and guidance to help clients make informed legal decisions regarding their personal or business matters.
+                            </p>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i>
+                                    <span>Legal Strategy Development</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i>
+                                    <span>Risk Assessment</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i>
+                                    <span>Compliance Guidance</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Legal Research -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden practice-card transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="md:flex">
+                        <div class="md:flex-shrink-0 md:w-1/3 bg-gray-100 flex items-center justify-center p-6">
+                            <div class="service-icon rounded-lg p-4">
+                                <i data-feather="book" class="w-10 h-10 text-white"></i>
+                            </div>
+                        </div>
+                        <div class="p-8 md:w-2/3">
+                            <h3 class="text-xl font-semibold mb-3">Legal Research</h3>
+                            <p class="text-gray-600 mb-4">
+                                Comprehensive analysis of legal issues to build strong cases, prepare legal documents, and support litigation strategies.
+                            </p>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i>
+                                    <span>Case Law Analysis</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i>
+                                    <span>Statutory Interpretation</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i>
+                                    <span>Legal Memorandum Preparation</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4" data-aos="fade-down">Additional Legal Services</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up">
+                    Comprehensive legal support beyond courtroom representation.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="file-text" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Document Drafting</h3>
+                    <p class="text-gray-600">
+                        Preparation of legal documents including contracts, agreements, wills, and other important legal instruments.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="shield" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Legal Protection</h3>
+                    <p class="text-gray-600">
+                        Advice on protecting legal rights and interests in various personal and business contexts.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="compass" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Legal Guidance</h3>
+                    <p class="text-gray-600">
+                        Step-by-step guidance through complex legal processes and procedures.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6" data-aos="fade-down">Need Legal Assistance?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up">
+                Contact us today to discuss your legal needs and how we can help protect your rights and interests.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+                <a href="appointment.html" class="bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition duration-300 inline-block" data-aos="fade-up" data-aos-delay="100">
+                    Book Appointment
+                </a>
+                <a href="contact.html" class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 font-bold py-3 px-8 rounded-full transition duration-300 inline-block" data-aos="fade-up" data-aos-delay="200">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">TheCourtCase.com</h3>
+                    <p class="text-gray-400">
+                        Professional legal services with dedication to client success and ethical practice.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                        <li><a href="practice-areas.html" class="text-gray-400 hover:text-white transition duration-300">Practice Areas</a></li>
+                        <li><a href="appointment.html" class="text-gray-400 hover:text-white transition duration-300">Appointment</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Practice Areas</h3>
+                    <ul class="space-y-2">
+                        <li><a href="practice-areas.html" class="text-gray-400 hover:text-white transition duration-300">Civil Disputes</a></li>
+                        <li><a href="practice-areas.html" class="text-gray-400 hover:text-white transition duration-300">Commercial Disputes</a></li>
+                        <li><a href="practice-areas.html" class="text-gray-400 hover:text-white transition duration-300">Client Counseling</a></li>
+                        <li><a href="practice-areas.html" class="text-gray-400 hover:text-white transition duration-300">Legal Research</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i data-feather="mail" class="w-5 h-5 mr-2 mt-1"></i>
+                            <span>nptras@gmail.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="w-5 h-5 mr-2 mt-1"></i>
+                            <span>Amritsar, Punjab</span>
+                        </li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 TheCourtCase.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Initialize AOS and Feather Icons
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
