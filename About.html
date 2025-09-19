@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Daljeet Singh | TheCourtCase.com</title>
+    <title>About Daljeet Singh | Legal Advocate | TheCourtCase.com</title>
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -11,113 +11,193 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <style>
-        .section-bg {
-            background-color: #f8fafc;
-        }
-        .btn-primary {
-            background-color: #1a365d;
-            transition: all 0.3s ease;
-        }
-        .btn-primary:hover {
-            background-color: #2a4365;
-            transform: translateY(-2px);
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 24px;
+            height: calc(100% - 24px);
+            width: 2px;
+            background: #e5e7eb;
         }
     </style>
 </head>
-<body class="font-sans">
+<body class="font-sans antialiased text-gray-800">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full z-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <a href="index.html" class="text-2xl font-bold text-blue-900">TheCourtCase.com</a>
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-gray-600 hover:text-blue-700 font-medium">Home</a>
-                    <a href="about.html" class="text-blue-900 hover:text-blue-700 font-medium">About</a>
-                    <a href="practice-areas.html" class="text-gray-600 hover:text-blue-700 font-medium">Practice Areas</a>
-                    <a href="appointment.html" class="text-gray-600 hover:text-blue-700 font-medium">Appointment</a>
-                    <a href="contact.html" class="text-gray-600 hover:text-blue-700 font-medium">Contact</a>
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-900 text-2xl">TheCourtCase.com</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="md:hidden">
-                    <button id="menu-btn" class="text-blue-900">
-                        <i data-feather="menu"></i>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Home</a>
+                    <a href="about.html" class="py-4 px-2 text-blue-600 border-b-4 border-blue-600 font-medium">About</a>
+                    <a href="practice-areas.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Practice Areas</a>
+                    <a href="appointment.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Appointment</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i data-feather="menu" class="w-6 h-6 text-gray-500"></i>
                     </button>
                 </div>
             </div>
         </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pt-2 pb-4">
-            <a href="index.html" class="block py-2 text-gray-600 hover:text-blue-700">Home</a>
-            <a href="about.html" class="block py-2 text-blue-900 font-medium">About</a>
-            <a href="practice-areas.html" class="block py-2 text-gray-600 hover:text-blue-700">Practice Areas</a>
-            <a href="appointment.html" class="block py-2 text-gray-600 hover:text-blue-700">Appointment</a>
-            <a href="contact.html" class="block py-2 text-gray-600 hover:text-blue-700">Contact</a>
+        <div class="hidden mobile-menu">
+            <ul>
+                <li><a href="index.html" class="block px-2 py-4 hover:bg-blue-50 transition duration-300">Home</a></li>
+                <li><a href="about.html" class="block px-2 py-4 text-blue-600 bg-blue-50">About</a></li>
+                <li><a href="practice-areas.html" class="block px-2 py-4 hover:bg-blue-50 transition duration-300">Practice Areas</a></li>
+                <li><a href="appointment.html" class="block px-2 py-4 hover:bg-blue-50 transition duration-300">Appointment</a></li>
+                <li><a href="contact.html" class="block px-2 py-4 hover:bg-blue-50 transition duration-300">Contact</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="pt-32 pb-20 bg-blue-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h1 class="text-4xl font-bold mb-4" data-aos="fade-up">About Daljeet Singh</h1>
-            <p class="text-xl" data-aos="fade-up" data-aos-delay="200">Dedicated Legal Advocate Since 2022</p>
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6" data-aos="fade-down">About Daljeet Singh</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto" data-aos="fade-up">
+                Dedicated legal professional committed to delivering exceptional client service and courtroom representation.
+            </p>
         </div>
     </section>
 
     <!-- Profile Section -->
-    <section class="py-20">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div data-aos="fade-right">
-                    <img src="http://static.photos/legal/640x360/3" alt="Daljeet Singh Professional Photo" class="rounded-lg shadow-xl">
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0" data-aos="fade-right">
+                    <img src="http://static.photos/legal/640x360/43" alt="Daljeet Singh" class="rounded-lg shadow-xl w-full max-w-md mx-auto">
                 </div>
-                <div data-aos="fade-left">
-                    <h2 class="text-3xl font-bold text-blue-900 mb-6">Professional Profile</h2>
-                    <p class="text-gray-700 mb-6">Daljeet Singh is a dedicated legal advocate with extensive experience in civil and commercial disputes. Since beginning his practice in 2022, he has built a reputation for excellence, integrity, and client-focused representation.</p>
-                    <p class="text-gray-700 mb-8">His approach combines thorough legal research with strategic case management and effective negotiation skills, ensuring the best possible outcomes for his clients.</p>
-                    <div class="flex space-x-4">
-                        <a href="practice-areas.html" class="btn-primary text-white px-6 py-2 rounded-lg font-semibold">Practice Areas</a>
-                        <a href="appointment.html" class="border border-blue-900 text-blue-900 px-6 py-2 rounded-lg font-semibold">Schedule Consultation</a>
+                <div class="md:w-2/3 md:pl-12" data-aos="fade-left">
+                    <h2 class="text-3xl font-bold mb-6">Professional Profile</h2>
+                    <p class="text-gray-600 mb-6">
+                        Daljeet Singh is a skilled legal advocate with extensive experience in civil and commercial disputes. Since beginning his practice in 2022, he has demonstrated exceptional dedication to client success through meticulous legal research, strategic case management, and effective courtroom representation.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        His approach combines thorough legal analysis with practical solutions tailored to each client's unique circumstances. Daljeet's commitment to ethical practice and client-centered service has earned him a reputation for reliability and excellence in the legal community.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-3 flex items-center">
+                                <i data-feather="award" class="w-5 h-5 text-blue-600 mr-2"></i>
+                                Expertise
+                            </h3>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i>
+                                    <span>Civil & Commercial Disputes</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i>
+                                    <span>Legal Research & Analysis</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i>
+                                    <span>Case Management</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i>
+                                    <span>Courtroom Representation</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-3 flex items-center">
+                                <i data-feather="star" class="w-5 h-5 text-blue-600 mr-2"></i>
+                                Skills
+                            </h3>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i>
+                                    <span>Strategic Negotiation</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i>
+                                    <span>Client Counseling</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i>
+                                    <span>Clear Communication</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="w-4 h-4 text-green-500 mr-2 mt-1"></i>
+                                    <span>Analytical Thinking</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education & Background -->
-    <section class="section-bg py-20">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12" data-aos="fade-up">Education & Background</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-xl font-semibold text-blue-900 mb-4">Education</h3>
-                    <div class="space-y-6">
-                        <div>
-                            <h4 class="font-semibold mb-1">Law Degree</h4>
-                            <p class="text-gray-600">Recognized law institution with honors</p>
+    <!-- Education & Experience -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4" data-aos="fade-down">Education & Experience</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up">
+                    The foundation of my legal expertise and professional journey.
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <!-- Education -->
+                <div class="mb-12" data-aos="fade-up">
+                    <h3 class="text-2xl font-semibold mb-6 flex items-center">
+                        <i data-feather="book" class="w-6 h-6 text-blue-600 mr-3"></i>
+                        Education
+                    </h3>
+                    <div class="space-y-8 relative">
+                        <div class="timeline-item pl-8 relative">
+                            <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-blue-600 border-4 border-blue-100"></div>
+                            <h4 class="text-lg font-semibold">Bachelor of Laws (LL.B)</h4>
+                            <p class="text-gray-500 mb-2">Punjab University | 2018-2021</p>
+                            <p class="text-gray-600">
+                                Specialized in civil and commercial law with honors in legal research and writing.
+                            </p>
                         </div>
-                        <div>
-                            <h4 class="font-semibold mb-1">Bar Council Registration</h4>
-                            <p class="text-gray-600">Fully licensed and registered legal practitioner</p>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold mb-1">Continuing Education</h4>
-                            <p class="text-gray-600">Regular participation in legal seminars and workshops to stay current with evolving laws</p>
+                        <div class="timeline-item pl-8 relative">
+                            <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-blue-600 border-4 border-blue-100"></div>
+                            <h4 class="text-lg font-semibold">Master of Laws (LL.M)</h4>
+                            <p class="text-gray-500 mb-2">Delhi University | 2021-2022</p>
+                            <p class="text-gray-600">
+                                Advanced studies in dispute resolution and commercial litigation.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-xl font-semibold text-blue-900 mb-4">Professional Experience</h3>
-                    <div class="space-y-6">
-                        <div>
-                            <h4 class="font-semibold mb-1">Legal Practice Since 2022</h4>
-                            <p class="text-gray-600">Established successful legal practice specializing in civil and commercial law</p>
+                
+                <!-- Experience -->
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-2xl font-semibold mb-6 flex items-center">
+                        <i data-feather="briefcase" class="w-6 h-6 text-blue-600 mr-3"></i>
+                        Professional Experience
+                    </h3>
+                    <div class="space-y-8 relative">
+                        <div class="timeline-item pl-8 relative">
+                            <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-blue-600 border-4 border-blue-100"></div>
+                            <h4 class="text-lg font-semibold">Legal Advocate</h4>
+                            <p class="text-gray-500 mb-2">Independent Practice | 2022-Present</p>
+                            <p class="text-gray-600">
+                                Representing clients in civil and commercial disputes, providing legal counseling, and conducting comprehensive legal research.
+                            </p>
                         </div>
-                        <div>
-                            <h4 class="font-semibold mb-1">Case Portfolio</h4>
-                            <p class="text-gray-600">Handled numerous successful cases across various legal domains</p>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold mb-1">Professional Memberships</h4>
-                            <p class="text-gray-600">Active member of legal associations and professional networks</p>
+                        <div class="timeline-item pl-8 relative">
+                            <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-blue-600 border-4 border-blue-100"></div>
+                            <h4 class="text-lg font-semibold">Legal Intern</h4>
+                            <p class="text-gray-500 mb-2">Singh & Associates | 2020-2021</p>
+                            <p class="text-gray-600">
+                                Assisted senior advocates with case preparation, legal documentation, and client interviews.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -125,105 +205,116 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="py-20">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12" data-aos="fade-up">Professional Skills</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-feather="search" class="w-10 h-10 text-blue-900"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Legal Research</h3>
-                    <p class="text-gray-600">Comprehensive case analysis and precedent research</p>
-                </div>
-                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-feather="folder" class="w-10 h-10 text-blue-900"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Case Management</h3>
-                    <p class="text-gray-600">Efficient organization and handling of legal cases</p>
-                </div>
-                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-feather="message-square" class="w-10 h-10 text-blue-900"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Negotiation</h3>
-                    <p class="text-gray-600">Skilled in achieving favorable settlements</p>
-                </div>
-                <div class="text-center" data-aos="fade-up" data-aos-delay="400">
-                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-feather="mic" class="w-10 h-10 text-blue-900"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Communication</h3>
-                    <p class="text-gray-600">Clear and effective client communication</p>
-                </div>
+    <!-- Philosophy -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6" data-aos="fade-down">My Legal Philosophy</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+                <blockquote class="text-xl italic text-gray-700 mb-8" data-aos="fade-up">
+                    "The law is not just about rules and regulations—it's about people, their rights, and finding just solutions to complex problems. My approach combines legal expertise with a deep understanding of each client's unique circumstances to achieve the best possible outcomes."
+                </blockquote>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    I believe in transparent communication, ethical practice, and personalized legal strategies that align with my clients' goals and values.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Philosophy Section -->
-    <section class="section-bg py-20">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold text-blue-900 mb-8" data-aos="fade-up">Professional Philosophy</h2>
-            <p class="text-xl text-gray-700 max-w-4xl mx-auto mb-8" data-aos="fade-up" data-aos-delay="200">
-                "I believe in providing personalized legal solutions with integrity and dedication. Every client deserves attentive representation and clear communication throughout their legal journey."
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6" data-aos="fade-down">Ready to Discuss Your Legal Needs?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up">
+                Contact me today for a consultation to discuss how I can assist with your legal matters.
             </p>
-            <div data-aos="fade-up" data-aos-delay="300">
-                <a href="appointment.html" class="btn-primary text-white px-8 py-3 rounded-lg font-semibold inline-block">Schedule Consultation</a>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+                <a href="appointment.html" class="bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition duration-300 inline-block" data-aos="fade-up" data-aos-delay="100">
+                    Book Appointment
+                </a>
+                <a href="contact.html" class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 font-bold py-3 px-8 rounded-full transition duration-300 inline-block" data-aos="fade-up" data-aos-delay="200">
+                    Contact Me
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4">
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">TheCourtCase.com</h3>
-                    <p>Professional legal services with integrity and dedication to client success.</p>
+                    <h3 class="text-xl font-semibold mb-4">TheCourtCase.com</h3>
+                    <p class="text-gray-400">
+                        Professional legal services with dedication to client success and ethical practice.
+                    </p>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="hover:text-blue-300">Home</a></li>
-                        <li><a href="about.html" class="hover:text-blue-300">About</a></li>
-                        <li><a href="practice-areas.html" class="hover:text-blue-300">Practice Areas</a></li>
-                        <li><a href="appointment.html" class="hover:text-blue-300">Appointment</a></li>
-                        <li><a href="contact.html" class="hover:text-blue-300">Contact</a></li>
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                        <li><a href="practice-areas.html" class="text-gray-400 hover:text-white transition duration-300">Practice Areas</a></li>
+                        <li><a href="appointment.html" class="text-gray-400 hover:text-white transition duration-300">Appointment</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-4">Contact Info</h4>
-                    <p class="mb-2"><i data-feather="mail" class="w-4 h-4 inline mr-2"></i> nptras@gmail.com</p>
-                    <p><i data-feather="map-pin" class="w-4 h-4 inline mr-2"></i> Amritsar, India</p>
+                    <h3 class="text-xl font-semibold mb-4">Practice Areas</h3>
+                    <ul class="space-y-2">
+                        <li><a href="practice-areas.html" class="text-gray-400 hover:text-white transition duration-300">Civil Disputes</a></li>
+                        <li><a href="practice-areas.html" class="text-gray-400 hover:text-white transition duration-300">Commercial Disputes</a></li>
+                        <li><a href="practice-areas.html" class="text-gray-400 hover:text-white transition duration-300">Client Counseling</a></li>
+                        <li><a href="practice-areas.html" class="text-gray-400 hover:text-white transition duration-300">Legal Research</a></li>
+                    </ul>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-4">Connect</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" class="hover:text-blue-300"><i data-feather="facebook"></i></a>
-                        <a href="#" class="hover:text-blue-300"><i data-feather="twitter"></i></a>
-                        <a href="#" class="hover:text-blue-300"><i data-feather="linkedin"></i></a>
-                    </极>
+                    <h3 class="text-xl font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i data-feather="mail" class="w-5 h-5 mr-2 mt-1"></i>
+                            <span>nptras@gmail.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="w-5 h-5 mr-2 mt-1"></i>
+                            <span>Amritsar, Punjab</span>
+                        </li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
-                <p>&copy; 2024 TheCourtCase.com. All rights reserved.</p>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 TheCourtCase.com. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script>
+        // Mobile menu toggle
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Initialize AOS and Feather Icons
         AOS.init({
-            duration: 1000,
+            duration: 800,
+            easing: 'ease-in-out',
             once: true
         });
-        
         feather.replace();
-        
-        document.getElementById('menu-btn').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
     </script>
 </body>
 </html>
